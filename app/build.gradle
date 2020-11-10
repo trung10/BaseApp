@@ -30,6 +30,7 @@ ext.retrofitVersion = '2.6.0'
 ext.okhttpVersion = '4.2.2'
 ext.glideVersion = '4.10.0'
 ext.daggerVersion = '2.25.2'
+ext.work_version = '2.4.0'
 
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
@@ -72,6 +73,8 @@ dependencies {
     implementation "io.reactivex.rxjava2:rxandroid:2.1.1"
     implementation "io.reactivex.rxjava2:rxkotlin:2.4.0"
 
+    implementation "androidx.work:work-runtime-ktx:$work_version"
+
     implementation "com.uber.autodispose:autodispose-android-archcomponents:1.4.0"
     implementation "com.uber.autodispose:autodispose:1.4.0"
 
@@ -94,14 +97,9 @@ dependencies {
         exclude group: "com.android.support"
     }
 
-    implementation "com.evernote:android-job:1.4.2"
-
     implementation "de.c1710:filemojicompat:1.0.17"
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
-
-
-
 }
