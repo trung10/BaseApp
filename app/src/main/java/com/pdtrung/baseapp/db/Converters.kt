@@ -4,6 +4,15 @@ import android.text.Spanned
 import androidx.room.TypeConverter
 import com.google.gson.GsonBuilder
 import com.google.gson.reflect.TypeToken
+import com.pdtrung.baseapp.TabData
+import com.pdtrung.baseapp.components.conversation.ConversationAccountEntity
+import com.pdtrung.baseapp.createTabDataFromId
+import com.pdtrung.baseapp.entity.Attachment
+import com.pdtrung.baseapp.entity.Emoji
+import com.pdtrung.baseapp.entity.Poll
+import com.pdtrung.baseapp.entity.Status
+import com.pdtrung.baseapp.json.SpannedTypeAdapter
+import com.pdtrung.baseapp.util.HtmlUtils
 import java.util.*
 
 class Converters {
