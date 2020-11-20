@@ -3,7 +3,7 @@ package com.pdtrung.baseapp
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
 import androidx.fragment.app.Fragment
-import com.pdtrung.baseapp.fragment.ConversationsFragment
+import com.pdtrung.baseapp.components.conversation.ConversationsFragment
 import com.pdtrung.baseapp.fragment.NotificationsFragment
 import com.pdtrung.baseapp.fragment.TimelineFragment
 

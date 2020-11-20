@@ -1,4 +1,4 @@
-package com.pdtrung.baseapp.fragment
+package com.pdtrung.baseapp.components.conversation
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,9 +8,6 @@ import android.view.ViewGroup
 import com.pdtrung.baseapp.R
 
 class ConversationsFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,15 +24,7 @@ class ConversationsFragment : Fragment() {
     }
 
     companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment ConversationsFragment.
-         */
-        // TODO: Rename and change types and number of parameters
+
         @JvmStatic
         fun newInstance() =
             ConversationsFragment().apply {

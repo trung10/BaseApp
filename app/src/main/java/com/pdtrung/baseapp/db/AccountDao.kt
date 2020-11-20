@@ -1,10 +1,9 @@
 package com.pdtrung.baseapp.db
 
-import androidx.room.Delete
-import androidx.room.Insert
-import androidx.room.OnConflictStrategy
-import androidx.room.Query
+import androidx.room.*
 
+
+@Dao
 interface AccountDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insertOrReplace(account: AccountEntity): Long
